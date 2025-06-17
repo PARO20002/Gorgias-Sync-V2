@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "pages/api/gorgias-sync.js",
+      "use": "@vercel/node@2.12.1"
+    }
+  ],
+  "crons": [
+    {
+      "path": "/api/gorgias-sync",
+      "schedule": "0 6 * * *"
+    }
+  ]
+}
